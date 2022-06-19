@@ -1,0 +1,22 @@
+
+body {
+    background-color: rgb(245, 178, 96);
+    color: rgb(121, 1, 1);
+    font-family: verdana;
+
+}
+
+h1 {
+    color:rgb(20, 122, 6);
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 25px;
+    border: solid 5px #000;
+    border-radius: 30px;
+}
+
+p {
+    line-height: 30px;
+    text-indent: 50px;
+    text-align: justify;
+}

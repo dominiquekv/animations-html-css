@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatile" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Dominique Vieira </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <header>
+            <div id="logoDomi">
+                <img src="imagens/Screenshot_20220201-195314.jpg" alt="Logo Domi Vieira" width="20%">
+            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/dominiquekv"> GitHub </a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:dominiquekv18@gmail.com"> Email </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/47996073646"> WhatsApp </a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>Dominique Vieira</h1>
+                    <h5>Front End Developer & System Analist</h5>
+                </div>
+                
+                <div onclick="displayAbout()" class="arrow">
+                    <p id="animation">⮞</p>
+                </div>
+
+                <div style="display: none;" id="about">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque harum consequuntur ipsa quas id, illum doloremque vel perferendis error, reiciendis corrupti aperiam sit fugit? Libero velit laboriosam eaque incidunt?
+                    </p>
+                </div>
+
+                <div class="form">
+                    <form action="">
+                        <input type="text" placeholder="Seu melhor e-mail :)">
+                        <button>Enviar!</button>
+                    </form>
+                </div>
+            </section>
+
+            <script>
+                function displayAbout() {
+                    var arrow = document.getElementById('animation');
+                    arrow.classList.toggle('rotate');
+
+                    var display = document.getElementById('about');
+                    display.classList.toggle('active');
+                }
+            </script>
+        </main>
+    </body>
+</html>
